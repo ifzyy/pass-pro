@@ -19,3 +19,44 @@ nav {
   background: #fff;
   box-shadow: 0px -5px 37px 0px rgba(0, 0, 0, 0.08);
 }
+.profile{
+  position: relative;
+}
+
+
+.left{
+  position: absolute;
+  left: 23%;
+ 
+}
+.right{
+  position: absolute;
+  right: 23%;
+
+  z-index: -10;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+  
+}
+.drop{
+  fill: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+filter: drop-shadow(0px -1.8518518209457397px 3.1481480598449707px rgba(0, 0, 0, 0.02)) drop-shadow(0px -8.148148536682129px 6.518518447875977px rgba(0, 0, 0, 0.03));
+padding: 20px;
+}
+
+.paragraph{
+  background-color: rgba(3, 142, 241, 0.1);
+  border-radius: 16px;
+}
+.after:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 1rem;
+    border-bottom: 0.5px solid #130f26;
+}
