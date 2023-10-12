@@ -1,0 +1,13 @@
+/* File: font.css */
+@font-face {
+    font-family: 'Airbnb';
+    src: local('Airbnb'),
+         url('./fonts/AirbnbCereal_W_Md.otf') format('woff'),
+         url('./fonts/CustomFont1Name.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'CustomFont2Name';
+    src: local('CustomFont2Name'),
+         url('./fonts/CustomFont2Name.woff') format('woff'),
+         url('./fonts/CustomFont2Name.woff2') format('woff2');
+}
