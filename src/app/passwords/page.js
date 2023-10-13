@@ -13,7 +13,7 @@ const Passwords = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
   return (
     <main className="bg-[#9046CF1A]">

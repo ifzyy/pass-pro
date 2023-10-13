@@ -4,12 +4,7 @@ import anime from "animejs";
 import { preLoaderAnim } from "./animations";
 import TypeWriter from "typewriter-effect";
 function SplashScreen({ finishLoading }) {
-  const [firstClass, setFirstClass] = useState("");
-  const [secondClass, setSecondClass] = useState("");
-  const [firstFade, setFirstFade] = useState("");
-  const [secondFade, setSecondFade] = useState("");
   const [isMounted, setIsMounted] = useState(false);
-  const [overallFade, setOverallFade] = useState("");
   const animate = () => {
     const loader = anime.timeline({
       complete: () => finishLoading(),
@@ -29,7 +24,7 @@ function SplashScreen({ finishLoading }) {
     return () => clearTimeout(timeout);
   }, []);
   return (
-    <div className="preloader">
+    <div className="preloader" isMounted={isMounted}>
       <h1 id="logo" className="texts-container">
         <span>Pass</span>
         <span>Pro</span>
