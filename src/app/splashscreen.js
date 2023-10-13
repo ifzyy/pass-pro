@@ -18,9 +18,8 @@ function SplashScreen({ finishLoading }) {
     });
   };
   useEffect(() => {
-    
+    preLoaderAnim();
     const timeout = setTimeout(() => setIsMounted(true), 10);
-   
     animate();
     return () => clearTimeout(timeout);
   }, []);
@@ -43,4 +42,3 @@ function SplashScreen({ finishLoading }) {
 }
 
 export default SplashScreen;
-                  

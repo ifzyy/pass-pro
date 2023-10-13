@@ -14,16 +14,21 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({children}) {
   const pathName = usePathname();
 const isHome = pathName === "/";
+
   const [isLoading, setIsLoading] = useState(isHome);
+
   useEffect(() => {
-    if (isLoading) return;
-  }, [isLoading]);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 7000);
+  }, []);
   
   return (
     <html lang="en">
       <body>
         {isLoading && isHome ? (
-          <SplashScreen  finishLoading={(()=> setIsLoading(false))}/>
+          <SplashScreen  finishLoading={(()=>  {
+            localStorage.setItem("splash", "false" )})}/>
         ) : (
           <>
             <Nav />
