@@ -8,7 +8,7 @@ function SplashScreen({ finishLoading }) {
   const animate = () => {
     const loader = anime.timeline({
       complete: () => finishLoading(),
-    });
+    }); 
     loader.add({
       targets: "#logo",
       delay: 0,
@@ -18,8 +18,9 @@ function SplashScreen({ finishLoading }) {
     });
   };
   useEffect(() => {
-    preLoaderAnim();
+    
     const timeout = setTimeout(() => setIsMounted(true), 10);
+    preLoaderAnim();
     animate();
     return () => clearTimeout(timeout);
   }, []);
