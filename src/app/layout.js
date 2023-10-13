@@ -27,7 +27,6 @@ const isHome = pathName === "/";
         ) : (
           <>
             <Nav />
-            <Index />
           {children}
           </>
         )}
