@@ -43,3 +43,4 @@ function SplashScreen({ finishLoading }) {
 }
 
 export default SplashScreen;
+                  
