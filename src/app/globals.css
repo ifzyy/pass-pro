@@ -126,7 +126,7 @@ nav {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background: rgb(243, 3, 243);
+  background: #9046CF;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -157,4 +157,7 @@ nav {
   }
   .typewriter__wrapper{
     color: black;
+  }
+  .active > {
+    color: #9046CF;
   }
